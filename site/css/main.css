@@ -1,17 +1,51 @@
 body {
 	margin: 0;
+	width: 400px;
+	margin: 0 auto;
+	font-size: 2em;
+	background: url('../img/bg.jpg') fixed top left;
+	color: #eee;
+	text-shadow: 0 0 2px #000;
+	font-family: "Helvetica", Arial;
 }
 
 table {
 	width: 100%;
 	text-align: center;
 	font-size: 2em;
-	font-family: "Lucida Console", Monaco, monospace;
-	background: url("http://www.designbolts.com/wp-content/uploads/2012/11/Beautiful-Dark-Seamlesss-background-for-mobile-apps.jpg");
+
 	color: #00cc00;
 	text-shadow: 0 0 5px #000;
 }
 
-#a {
-	font-size: .5em;
+p {
+	margin: 0;
+}
+
+.line {
+	padding: 20px 0;
+	clear: both;
+}
+
+span {
+	display: block;
+}
+
+.temp, .t {
+	float: left;
+}
+
+.temp {
+	padding-left: 20px;
+	border-left: 3px solid #aa0000;
+}
+
+.t {
+	line-height: 70px;
+	padding-right: 20px;
+}
+
+.t img {
+	width: 23px;
+	padding-right: 10px;
 }
