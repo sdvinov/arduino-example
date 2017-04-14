@@ -23,14 +23,14 @@ call.onreadystatechange = function()
 		hours = ("0" + date.getHours()).slice(-2);
 		minutes = ("0" + date.getMinutes()).slice(-2);
 		seconds = ("0" + date.getSeconds()).slice(-2);
-		t_cont += '<div class="line"><div class="t"><p><img src="img/time.png" />' + hours + ":" + minutes + ":" + seconds + '</p></div><div class="temp"><span class="c">' + data[i].temp_c + ' °C</span><span class="f">' + data[i].temp_f + ' °F</span></div></div>';
+		t_cont += '<div class="line"><div class="t"><p><img src="img/time.png" />' + hours + ":" + minutes + ":" + seconds + '</p></div><div class="temp"><img src="img/temp.png"/><span class="c">' + data[i].temp_c + ' °C</span><span class="f">' + data[i].temp_f + ' °F</span></div></div>';
 		sum_c += Number(data[i].temp_c);
 		sum_f += Number(data[i].temp_f);
 	}
 	let avg_c = Math.round(sum_c / (data.length));
 	let avg_f = Math.round(sum_f / (data.length));
-	let t_avg = '<div id="a"><p id="c">Average ' + avg_c.toFixed(2) + ' °C</p><p id="f">Average ' + avg_f.toFixed(2) + ' °F</p>';
-	output = t_avg + t_cont;
+	let t_avg = '<p id="c">' + avg_c.toFixed(2) + ' °C</p><p id="f">' + avg_f.toFixed(2) + ' °F</p></div>';
+	output = "<div id='a'><h2>Average</h2>" + t_avg + "</div>" + t_cont;
 	document.getElementById("diiiv").innerHTML = output;
 };
 call.open("GET", file, true);

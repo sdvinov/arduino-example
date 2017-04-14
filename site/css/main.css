@@ -5,17 +5,8 @@ body {
 	font-size: 2em;
 	background: url('../img/bg.jpg') fixed top left;
 	color: #eee;
-	text-shadow: 0 0 2px #000;
-	font-family: "Helvetica", Arial;
-}
-
-table {
-	width: 100%;
-	text-align: center;
-	font-size: 2em;
-
-	color: #00cc00;
 	text-shadow: 0 0 5px #000;
+	font-family: "Helvetica", Arial;
 }
 
 p {
@@ -37,7 +28,7 @@ span {
 
 .temp {
 	padding-left: 20px;
-	border-left: 3px solid #aa0000;
+	border-left: 5px solid #aa0000;
 }
 
 .t {
@@ -48,4 +39,38 @@ span {
 .t img {
 	width: 23px;
 	padding-right: 10px;
+}
+
+.temp img {
+	width: 40px;
+	padding-top: 7px;
+	padding-right: 20px;
+}
+
+.c, .t, .temp img {
+	float: left;
+}
+
+#a {
+	margin: 20px 0 20px 0;
+	background: rgba(0,0,0,.3);
+	width: 390px;
+	padding: 30px 0;
+	border: 1px solid #000;
+	box-shadow: 0 0 5px #000;
+}
+
+#a p {
+	display: inline;
+	margin-left: 30px;
+}
+
+#a p:last-of-type {
+	padding-left: 50px;
+}
+
+h2 {
+	text-transform: uppercase;
+	margin: 0;
+	text-align: center;
 }
