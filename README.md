@@ -79,5 +79,5 @@ client.println("Connection: close");
 client.println();
 ```
 
-Parse it with javascript on a [simple site example](https://github.com/sdvinov/arduino-example/site).
+Parse it with javascript on a [simple site example](https://github.com/sdvinov/arduino-example/tree/master/site).
 
